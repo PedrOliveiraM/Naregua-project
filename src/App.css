@@ -1,0 +1,98 @@
+.container-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: hsl(var(--card));
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10%;
+  font: bold 1.5rem "Nunito", sans-serif;
+}
+
+.container-menu-links {
+  display: flex;
+  align-items: center;
+  gap: 25%;
+  padding: 10px 15%;
+}
+
+.profile-container Button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.calendar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font: bold "Nunito", sans-serif;
+}
+
+.background-img {
+  position: relative;
+  height: 500px; /* Ajuste conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/Fundo.png"); /* Ajuste o caminho conforme necessário */
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1; /* Certifique-se de que o fundo está atrás do conteúdo */
+}
+
+.background-img h1 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  color: white; /* Cor do texto sobre a imagem */
+  z-index: 1; /* Certifique-se de que o texto está acima do fundo */
+}
+
+a {
+  cursor: pointer;
+  font: bolder 1.5rem "Nunito", sans-serif;
+}
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10%;
+}
+
+.container-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10%;
+  width: 500px;
+  font: 16px "Nunito", sans-serif;
+}
+.ico-search {
+  font-size: 20px
+}
