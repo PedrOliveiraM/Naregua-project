@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-      <div className="container-menu">
+      <div className="header">
         <div className="container-logo">
           <img src="\public\scissor.svg" alt="NaRégua" />
           <h1>NaRégua</h1>
@@ -42,12 +42,13 @@ function App() {
 
       <div className="background-img">
         <div className="container-main">
-          <div className="container-login">
-            <h1>
-              Olá,<a>Faça seu login!</a>
-            </h1>
-            <span>{dataFormatada}</span>
-
+          <div className="login-search-container">
+            <div className="container-login">
+              <h1>
+                Olá,<a>Faça seu login!</a>
+              </h1>
+              <span>{dataFormatada}</span>
+            </div>
             <div className="container-search">
               <Input placeholder="Buscar Barbearias"></Input>
               <Button>
@@ -58,25 +59,38 @@ function App() {
             </div>
           </div>
 
-          <div className="cards-container">
-            <div className="next-button">
-              <MdNavigateNext className="icon-Next"/>
+          <div className="section-card-container">
+            <span className="recomend">RECOMENDADO</span>
+            <div className="cards-container">
+              <div className="next-button">
+                <MdNavigateNext className="icon-Next" />
+              </div>
+
+              <div className="card">
+                <Card
+                  nameBarber={"Dom Papitu"}
+                  Andress={"Rua 25 ,Prox ao Hotel Ramos, Correntina-BA"}
+                  imgBarber={"./public/Barber 1.png"}
+                ></Card>
+              </div>
+              <div className="card">
+                <Card
+                  nameBarber={"Irmão de Edilsinho"}
+                  Andress={"Rua da chácara,Merdado Novo, Correntina-BA"}
+                  imgBarber={"./public/Barber can.png"}
+                ></Card>
+              </div>
+              <div className="card">
+                <Card
+                  nameBarber={"Junin du corte"}
+                  Andress={"Rua da Coelba, Prox ao Postinho, Correntina-BA"}
+                  imgBarber={"./public/Barber 2.png"}
+                ></Card>
+              </div>
+              <div className="next-button2">
+                <MdNavigateNext className="icon-Next2" />
+              </div>
             </div>
-            <Card
-              nameBarber={"Dom Papitu"}
-              Andress={"Rua 25 ,Prox ao Hotel Ramos, Correntina-BA"}
-              imgBarber={"./public/Barber 1.png"}
-            ></Card>
-            <Card
-              nameBarber={"Irmão de Edilsinho"}
-              Andress={"Rua da chácara,Merdado Novo, Correntina-BA"}
-              imgBarber={"./public/Barber can.png"}
-            ></Card>
-            <Card
-              nameBarber={"Irmão de Edilsinho"}
-              Andress={"Rua da chácara,Merdado Novo, Correntina-BA"}
-              imgBarber={"./public/Barber can.png"}
-            ></Card>
           </div>
         </div>
       </div>
