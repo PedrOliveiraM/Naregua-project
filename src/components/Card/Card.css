@@ -1,6 +1,6 @@
 .card-container {
   width: 225px;
-  height: auto;
+  height: 256px;
   background-color: hsl(var(--card));
   border-radius: 16px;
   padding: 10px;
@@ -25,16 +25,27 @@
   border: #8162ff solid 1px;
 }
 
-img {
-  border-radius: 8px;
+.barber-logo img{
+  border-radius: 10px;
+  width: 250px;
+  height: auto;
 }
 
 .info-container {
   display: flex;
   flex-direction: column;
+  text-align: left;
   gap: 0px;
   padding: 0px;
 }
+.info-container h1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0px;
+  padding: 0px;
+}
+
 .barbershop-address {
   font-family: "Nunito Sans", sans-serif;
   font-size: 12px;
@@ -55,4 +66,34 @@ img {
 
 .reservation-button:hover {
   background-color: #8162ff;
+}
+
+.star-icon,
+.star-value {
+  position: absolute; /* Torna os elementos absolutos para posicioná-los na frente da imagem */
+}
+
+.star-icon {
+  fill: #8162ff;
+  color: #8162ff;
+}
+
+.star-value {
+  right: 16px; /* Posiciona o valor da estrela à direita do container */
+  font-weight: bold;
+}
+
+.badge {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 70px;
+  height: 24px;
+  position: absolute;
+  opacity: 0.9;
+  border-radius: 16px;
+}
+
+.badge-cont {
+  display: flex;
+  align-items: center;
 }

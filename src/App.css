@@ -45,6 +45,7 @@
   gap: 10px;
   font-size: 16px;
   font: bold "Nunito", sans-serif;
+  cursor: pointer;
 }
 
 .background-img {
@@ -65,7 +66,7 @@
   left: 0;
   background-image: url("/Fundo.png"); /* Ajuste o caminho conforme necessário */
   background-size: cover;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: -1; /* Certifique-se de que o fundo está atrás do conteúdo */
 }
 
@@ -117,6 +118,14 @@ a {
   font-size: 20px;
 }
 
+.container-search button {
+  transition: all 0.3s;
+}
+
+.container-search button:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
 .container-main {
   width: 100%;
   display: flex;
@@ -138,7 +147,9 @@ a {
   background-color: transparent;
   transition: all 0.3s;
   transform: rotate(180deg);
-  color: hsl(var(--primary));
+  color: #8162ff;
+  background-color: #26272b;
+  border-radius: 50%;
 }
 .icon-Next2 {
   transform: rotate(0);
@@ -157,7 +168,56 @@ a {
   margin-left: 70px;
 }
 
-@media (max-width: 1500px) {
+.section-card-container span {
+  font: bold 16px "Nunito", sans-serif;
+  margin-left: 70px;
+}
+
+.cards-pupular {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+  overflow-x: auto;
+  height: 300px;
+  padding-top: 15px;
+}
+
+.cards-pupular::-webkit-scrollbar {
+  width: 0;
+}
+
+.card {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.section-barbers-populares-title span {
+  font: bold 16px "Nunito", sans-serif;
+  color: #ffffff;
+  margin-left: 100px;
+}
+
+.section-barbers-populares-title {
+  width: 100%;
+}
+
+/* Ajuste para telas maiores TVs */
+@media (max-width: 2000px) {
+  .section-card-container {
+    width: 70%;
+  }
+  .container-search input {
+    width: 200px;
+  }
+  .login-search-container {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 1600px) {
   .header {
     flex-direction: row;
     justify-content: space-between;

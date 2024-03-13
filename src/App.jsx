@@ -6,8 +6,12 @@ import { Input } from "./components/ui/input";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale"; // Importa a localização ptBR
 import { MdNavigateNext } from "react-icons/md";
-import "./App.css";
+
+// Importa o componentes Criados por min
+import Footer from "./components/Footer/Footer";
 import Card from "./components/Card/Card";
+// Importa o css
+import "./App.css";
 
 function App() {
   // Obtém a data atual
@@ -60,8 +64,8 @@ function App() {
           </div>
 
           <div className="section-card-container">
-            <span className="recomend">RECOMENDADO</span>
-            <div className="cards-container">
+            <span className="recomend">Destaques</span>
+            <div className="cards-container" style={{ marginTop: "10px" }}>
               <div className="next-button">
                 <MdNavigateNext className="icon-Next" />
               </div>
@@ -69,14 +73,14 @@ function App() {
               <div className="card">
                 <Card
                   nameBarber={"Dom Papitu"}
-                  Andress={"Rua 25 ,Prox ao Hotel Ramos, Correntina-BA"}
+                  Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
                   imgBarber={"./public/Barber 1.png"}
                 ></Card>
               </div>
               <div className="card">
                 <Card
                   nameBarber={"Irmão de Edilsinho"}
-                  Andress={"Rua da chácara,Merdado Novo, Correntina-BA"}
+                  Andress={"Rua da chácara, Merdado Novo, Correntina-BA"}
                   imgBarber={"./public/Barber can.png"}
                 ></Card>
               </div>
@@ -93,6 +97,44 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="section-barbers-populares">
+        <div className="section-barbers-populares-title">
+          <span>BARBEIROS POPULARES</span>
+          <div className="cards-pupular">
+            <div className="card">
+              <Card
+                nameBarber={"BarberShop do Zé"}
+                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                imgBarber={"./public/Barber 5.png"}
+              ></Card>
+            </div>
+            <div className="card">
+              <Card
+                nameBarber={"Dom Papitu"}
+                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                imgBarber={"./public/Barber 2.png"}
+              ></Card>
+            </div>
+            <div className="card">
+              <Card
+                nameBarber={"Dom Papitu"}
+                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                imgBarber={"./public/Barber 3.png"}
+              ></Card>
+            </div>
+            <div className="card">
+              <Card
+                nameBarber={"Dom Papitu"}
+                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                imgBarber={"./public/Barber 4.png"}
+              ></Card>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="section-footer">
+        <Footer />
       </div>
     </>
   );

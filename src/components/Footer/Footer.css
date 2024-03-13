@@ -1,0 +1,11 @@
+.footer-container {
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: hsl(var(--card));
+}
