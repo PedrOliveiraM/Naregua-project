@@ -19,7 +19,9 @@ const Card = ({ nameBarber, Andress, imgBarber }) => {
           </div>
         </div>
         <div className="barber-logo">
-          <img src={imgBarber} alt="img" />
+          <div className="image-container">
+            <img src={imgBarber} alt="img" />
+          </div>
         </div>
         <div className="info-container">
           <h1 className="barbershop-name">{nameBarber}</h1>

@@ -1,0 +1,323 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: hsl(var(--card));
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+  }
+  
+  .container-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10%;
+    font: bold 1.5rem "Nunito", sans-serif;
+  }
+  
+  .container-logo img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .container-menu-links {
+    display: flex;
+    align-items: center;
+    gap: 25%;
+    padding: 10px 15%;
+  }
+  
+  .profile-container Button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+  }
+  
+  .calendar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font: bold "Nunito", sans-serif;
+    cursor: pointer;
+  }
+  
+  .background-img {
+    position: relative;
+    height: 500px; /* Ajuste conforme necessário */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .background-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/Fundo.png"); /* Ajuste o caminho conforme necessário */
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1; /* Certifique-se de que o fundo está atrás do conteúdo */
+  }
+  
+  .background-img h1 {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    color: white; /* Cor do texto sobre a imagem */
+    z-index: 1; /* Certifique-se de que o texto está acima do fundo */
+    padding: 5px;
+  }
+  
+  a {
+    cursor: pointer;
+    font: bolder 1.5rem "Nunito", sans-serif;
+  }
+  
+  .container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5%;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Adiciona espaço igual entre os itens */
+    gap: 10px; /* Especifica o espaçamento desejado entre os itens */
+    align-items: center;
+  }
+  .containers-by-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Adiciona espaço igual entre os itens */
+    gap: 16px; /* Especifica o espaçamento desejado entre os itens */
+    align-items: center;
+  }
+  
+  .container-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10%;
+    width: 500px;
+    font: 16px "Nunito", sans-serif;
+  }
+  .ico-search {
+    font-size: 20px;
+  }
+  
+  .container-search button {
+    transition: all 0.3s;
+  }
+  
+  .container-search button:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  
+  .container-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  
+  .icon-Next,
+  .icon-Next2,
+  .icon-Next-popular,
+  .icon-Next-visit {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font: bold "Nunito", sans-serif;
+    flex-direction: row-reverse; /* Inverte a direção da linha */
+    background-color: transparent;
+    transition: all 0.3s;
+    transform: rotate(180deg);
+    color: #8162ff;
+    background-color: #26272b;
+    border-radius: 50%;
+  }
+  .icon-Next2,
+  .icon-Next-popular,
+  .icon-Next-visit {
+    transform: rotate(0);
+  }
+  
+  .icon-Next2:hover {
+    background-color: transparent;
+    font-size: 48px;
+  }
+  .icon-Next:hover {
+    background-color: transparent;
+    font-size: 48px;
+  }
+  
+  .icon-Next-popular:hover {
+    background-color: transparent;
+    font-size: 48px;
+  }
+  .icon-Next-visit:hover {
+    background-color: transparent;
+    font-size: 48px;
+  }
+  .recomend {
+    font: bold 14px "Nunito", sans-serif;
+    margin-left: 70px;
+  }
+  
+  .section-card-container span {
+    font: bold 16px "Nunito", sans-serif;
+    margin-left: 70px;
+  }
+  
+  .cards-pupular,
+  .cards-more-visit {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    overflow-x: auto;
+    overflow-x: unset;
+    height: 300px;
+    padding-top: 0px;
+    padding-left: 60px;
+    padding-right: 50px;
+  }
+  
+  .cards-popular::-webkit-scrollbar,
+  .barber-more-visit::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .card {
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  
+  .section-barbers-populares-title span,
+  .section-barbers-more-visit-title {
+    font: bold 16px "Nunito", sans-serif;
+    color: #ffffff;
+    margin-left: 150px;
+  }
+  .barber-populares,
+  .barber-more-visit {
+    display: flex;
+    padding-top: 15px;
+  }
+  
+  .section-barbers-populares-title,
+  .section-barbers-more-visit-title {
+    width: 100%;
+  }
+  
+  .cards-pupular,
+  .cards-more-visit {
+    align-items: center;
+  }
+  
+  /* Ajuste para telas maiores TVs */
+  @media (max-width: 2000px) {
+    .section-card-container {
+      width: 70%;
+    }
+    .container-search input {
+      width: 200px;
+    }
+    .login-search-container {
+      margin-right: 60px;
+    }
+  }
+  
+  @media (max-width: 1600px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .login-search-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .cards-container {
+      width: 100%;
+      margin-right: 60px;
+      gap: 0px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .container-search {
+      width: 100%;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container-main {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 440px) {
+    .container-logo {
+      width: 30%;
+    }
+    .calendar-container {
+      display: none;
+    }
+    .background-img {
+      display: flex;
+      justify-content: center; /* ou flex-start, flex-end, space-between, etc. */
+      align-items: center; /* ou flex-start, flex-end, baseline, etc. */
+      position: relative;
+      margin-top: 100px;
+    }
+    .container-main {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .containers-by-cards {
+      display: flex;
+    }
+  
+    .card {
+      width: 300px; /* Defina a largura desejada para os cartões */
+      display: none;
+    }
+    .card:first-child {
+      display: block; /* Mostra o primeiro cartão */
+    }
+  
+    .icon-Next2:hover {
+      background-color: transparent;
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    .icon-Next:hover {
+      background-color: transparent;
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  }
+  

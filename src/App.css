@@ -95,7 +95,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between; /* Adiciona espaço igual entre os itens */
-  gap: 16px; /* Especifica o espaçamento desejado entre os itens */
+  gap: 10px; /* Especifica o espaçamento desejado entre os itens */
   align-items: center;
 }
 .containers-by-cards {
@@ -138,7 +138,9 @@ a {
 }
 
 .icon-Next,
-.icon-Next2 {
+.icon-Next2,
+.icon-Next-popular,
+.icon-Next-visit {
   display: flex;
   align-items: center;
   font-size: 35px;
@@ -151,7 +153,9 @@ a {
   background-color: #26272b;
   border-radius: 50%;
 }
-.icon-Next2 {
+.icon-Next2,
+.icon-Next-popular,
+.icon-Next-visit {
   transform: rotate(0);
 }
 
@@ -160,6 +164,15 @@ a {
   font-size: 48px;
 }
 .icon-Next:hover {
+  background-color: transparent;
+  font-size: 48px;
+}
+
+.icon-Next-popular:hover {
+  background-color: transparent;
+  font-size: 48px;
+}
+.icon-Next-visit:hover {
   background-color: transparent;
   font-size: 48px;
 }
@@ -173,19 +186,23 @@ a {
   margin-left: 70px;
 }
 
-.cards-pupular {
+.cards-pupular,
+.cards-more-visit {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   margin-top: 15px;
   margin-left: 60px;
   margin-right: 60px;
   overflow-x: auto;
+  overflow-x: unset;
   height: 300px;
-  padding-top: 15px;
+  padding-top: 0px;
+  padding-left: 60px;
+  padding-right: 50px;
 }
 
-.cards-pupular::-webkit-scrollbar {
+.cards-popular::-webkit-scrollbar,
+.barber-more-visit::-webkit-scrollbar {
   width: 0;
 }
 
@@ -194,14 +211,26 @@ a {
   margin-right: 5px;
 }
 
-.section-barbers-populares-title span {
+.section-barbers-populares-title span,
+.section-barbers-more-visit-title {
   font: bold 16px "Nunito", sans-serif;
   color: #ffffff;
-  margin-left: 100px;
+  margin-left: 150px;
+}
+.barber-populares,
+.barber-more-visit {
+  display: flex;
+  padding-top: 15px;
 }
 
-.section-barbers-populares-title {
+.section-barbers-populares-title,
+.section-barbers-more-visit-title {
   width: 100%;
+}
+
+.cards-pupular,
+.cards-more-visit {
+  align-items: center;
 }
 
 /* Ajuste para telas maiores TVs */
@@ -232,7 +261,7 @@ a {
   .cards-container {
     width: 100%;
     margin-right: 60px;
-    gap: 15px;
+    gap: 0px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

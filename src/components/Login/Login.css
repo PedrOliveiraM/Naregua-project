@@ -1,0 +1,15 @@
+.container {
+  width: 350px; /* Definindo a largura */
+  height: 550px; /* Definindo a altura, para que seja um quadrado */
+  background-color: hsl(var(--card)); /* Cor de fundo do quadrado */
+  display: flex; /* Usando display flex para centralizar o texto */
+  justify-content: center; /* Centralizando horizontalmente */
+  align-items: center; /* Centralizando verticalmente */
+  flex-direction: column;
+  border-radius: 15px;
+  border: 2px solid hsl(var(--primary)); /* Corrigindo a ordem do valor da borda */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
