@@ -31,10 +31,35 @@ function Home() {
   };
   const handleInputBarberClick = () => {
     setInputBarber("");
-  }
+  };
+
+  //vetor com nomes de barbearias
+  const barbearias = [
+    "Navalha & Estilo",
+    "Bigode Fino",
+    "Barbearia Vanguarda",
+    "Cortes e Afiações",
+    "Raspando Bem",
+    "Barba & Tesoura",
+    "A Arte do Barbear",
+    "Estilo Cortante",
+    "Aparência Masculina",
+    "Barbearia Dom Quixote",
+  ];
+  const andressBarbers = [
+    "Rua das Navalhas, 123",
+    "Avenida dos Bigodes, 456",
+    "Travessa da Barbearia, 789",
+    "Alameda das Tesouras, 321",
+    "Praça do Corte, 654",
+    "Rua da Barba, 987",
+    "Avenida da Estilização, 741",
+    "Rua do Aparador, 852",
+    "Avenida dos Cortes, 369",
+    "Travessa da Afiação, 258",
+  ];
 
   return (
-    
     <>
       <div className="header">
         <div className="container-logo">
@@ -96,14 +121,14 @@ function Home() {
               </div>
               <div className="card">
                 <Card
-                  nameBarber={"Irmão de Edilsinho"}
-                  Andress={"Rua da chácara, Merdado Novo, Correntina-BA"}
+                  nameBarber={"Brother's Barber Shop"}
+                  Andress={"Rua 144, , s/n, Correntina-BA"}
                   imgBarber={"./public/Barber can.png"}
                 ></Card>
               </div>
               <div className="card">
                 <Card
-                  nameBarber={"Junin du corte"}
+                  nameBarber={"Junin do corte"}
                   Andress={"Rua da Coelba, Prox ao Postinho, Correntina-BA"}
                   imgBarber={"./public/Barber 2.png"}
                 ></Card>
@@ -121,36 +146,36 @@ function Home() {
           <div className="cards-pupular">
             <div className="card">
               <Card
-                nameBarber={"BarberShop do Zé"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[9]}
+                Andress={andressBarbers[9]}
                 imgBarber={"./public/Barber 5.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[8]}
+                Andress={andressBarbers[8]}
                 imgBarber={"./public/Barber 2.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[7]}
+                Andress={andressBarbers[7]}
                 imgBarber={"./public/Barber 3.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[6]}
+                Andress={andressBarbers[6]}
                 imgBarber={"./public/Barber 4.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[5]}
+                Andress={andressBarbers[5]}
                 imgBarber={"./public/Barber 1.png"}
               ></Card>
             </div>
@@ -167,36 +192,36 @@ function Home() {
           <div className="cards-pupular">
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[0]}
+                Andress={andressBarbers[0]}
                 imgBarber={"./public/BarberBarrr.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[1]}
+                Andress={andressBarbers[1]}
                 imgBarber={"./public/Barber 2.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[2]}
+                Andress={andressBarbers[2]}
                 imgBarber={"./public/Barber 3.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[3]}
+                Andress={andressBarbers[3]}
                 imgBarber={"./public/Barber 4.png"}
               ></Card>
             </div>
             <div className="card">
               <Card
-                nameBarber={"Dom Papitu"}
-                Andress={"Rua 25, Prox ao Hotel Ramos, Correntina-BA"}
+                nameBarber={barbearias[4]}
+                Andress={andressBarbers[4]}
                 imgBarber={"./public/Barber 1.png"}
               ></Card>
             </div>

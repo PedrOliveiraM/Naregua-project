@@ -47,15 +47,22 @@
   color: #838896;
 }
 
+.card-container {
+  position: relative; /* Isso é importante para o posicionamento relativo */
+}
+
 .reservation-button {
-  width: 196px;
+  position: absolute;
+  bottom: 10px; /* Ajuste conforme necessário para a distância do fundo */
+  right: 15px; /* Ajuste conforme necessário para a distância da direita */
+  max-width: 196px;
   height: 36px;
   border: none;
   border-radius: 8px;
   background-color: #26272b;
   color: white;
   cursor: pointer;
-  text-align: center; /* Alinha o texto horizontalmente ao centro */
+  text-align: center; /* Alinha o texto horizontalmente ao centro */;
 }
 
 .reservation-button:hover {

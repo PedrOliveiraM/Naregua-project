@@ -9,7 +9,7 @@ const Footer = () => {
           <img src="\public\scissor.svg" alt="NaRégua" />
           <h1>NaRégua</h1>
         </div>
-        <p>© 2021 NaRégua. Todos os direitos reservados.</p>
+        <p>© 2024 NaRégua. Todos os direitos reservados.</p>
       </div>
     </>
   );
