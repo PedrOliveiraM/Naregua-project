@@ -1,8 +1,6 @@
-# React + Vite
+# NAREGUA - SISTEMA WEB AGREGADOR DE BARBEARIAS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Detalhes 
+Este sistema web irá simplificar e aprimorar a experiência dos usuários no agendamento de serviços em barbearias, além de proporcionar uma gestão eficiente para os estabelecimentos. Ao integrar funcionalidades como busca por barbearias, detalhamento dos serviços oferecidos e geolocalização, ele oferece uma solução completa que visa a conveniência e praticidade dos clientes. 
+![image](https://github.com/PedrOliveiraM/Naregua-project/assets/111465970/f1af767e-78da-4bae-816b-2a8c14c78bc6](https://github.com/PedrOliveiraM/Naregua-project/blob/master/public/MainDesk.png))
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
