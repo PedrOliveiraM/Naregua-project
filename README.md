@@ -8,7 +8,9 @@ Este sistema web irá simplificar e aprimorar a experiência dos usuários no ag
 ![Imagem do Sistema](https://raw.githubusercontent.com/PedrOliveiraM/Naregua-project/master/public/MainMob.png)
 
 ## Arquitetura 
-![Imagem do Sistema](https://raw.githubusercontent.com/PedrOliveiraM/Naregua-project/master/public/ArquiteturaDoSistema.png)
+![Arquitetura do Sistema](https://raw.githubusercontent.com/PedrOliveiraM/Naregua-project/master/public/ArquiteturaDoSistema.png)
 A arquitetura MVC é uma abordagem de design amplamente utilizada no desenvolvimento de aplicações web, incluindo sistemas como um agregador de barbearias. Ela separa a aplicação em três componentes principais: Model (Modelo), View (Visão) e Controller (Controlador). Essa separação facilita a manutenção e a escalabilidade do sistema
 
-
+## Tecnologias 
+As tecnologias usadas para desenvolver esse projeto será :
+![Imagem das Tecnologias](https://skillicons.dev/icons?i=html,css,js,react,prisma,tailwindcss,git,vscode)
